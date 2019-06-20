@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>iam Cafe</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,500,500i,700,700i,900,900i&display=swap&subset=vietnamese" rel="stylesheet">
+    <link href="resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="resources/vendor/wave-effect/wave-affect.css" rel="stylesheet">
+    <link href="resources/vendor/mCustomScrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+    <link href="resources/vendor/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="resources/vendor/slick/slick.css">
+    <link rel="stylesheet" href="resources/vendor/slick/slick-theme.css">
+    <link rel="stylesheet" href="resources/vendor/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="resources/vendor/jquery-ui/jquery-ui.theme.min.css">
+    <link rel="stylesheet" href="resources/vendor/jssocials/jssocials.css">
+    <link rel="stylesheet" href="resources/vendor/jssocials/jssocials-theme-classic.css">
+    <link rel="stylesheet" href="resources/vendor/fancybox/jquery.fancybox.css">
+    <link href="resources/css/style.css" rel="stylesheet">
+</head>
+
+<body id ="body-bg" style="">
+    <section class="wrapper" id="app">
+        <header class="header">
+            <div class="header-navbar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="logo">
+                                <a href="#">
+                                    <img src="resources/images/logo.png" alt="logo" class="img-responsive">
+                                </a>
+                            </div>
+                            <div class="navbar">
+                                <ul class="header-icons hidden-sm hidden-xs">
+                                    <li class="hotline">
+                                        <a href="#">
+                                            <i class="fa fa-phone"></i>
+                                            <span>1800 1084</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>Đăng nhập</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <nav class="menu menu-center" id="menu">
+                                    <ul class="menubar hidden-sm hidden-xs">
+                                        <li>
+                                            <a href="index.php">
+                                                <i class="fa fa-home"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="gioi-thieu.php">Giới thiệu</a>
+                                        </li>
+                                        <li class="has-submenu">
+                                            <a href="danh-sach-san-pham.php">
+                                                Thực đơn
+                                                <i class="icon-first-submenu fa fa-angle-down"></i>
+                                            </a>
+                                            <ul class="submenu">
+                                                <li>
+                                                    <a href="danh-sach-san-pham.php">Món chính</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-submenu">
+                                            <a href="danh-sach-tin-tuc.php">Tin tức <i class="icon-first-submenu fa fa-angle-down"></i></a>
+                                            <ul class="submenu">
+                                                <li>
+                                                    <a href="danh-sach-tin-tuc.php">Tin tức quảng cáo</a>
+                                                </li>
+                                                <li>
+                                                    <a href="danh-sach-tin-tuc.php">Ẩm thực thế giới</a>
+                                                </li>
+                                                <li>
+                                                    <a href="danh-sach-tin-tuc.php">Ẩm thực việt nam</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="lien-he.php">Liên hệ <span class="badge">New</span></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="menu-mobi" id="menu-mobi">
+                                        <li>
+                                            <a href="index.php">
+                                                Trang chủ
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="gioi-thieu.php">Giới thiệu</a>
+                                        </li>
+                                        <li class="has-submenu">
+                                            <a href="danh-sach-san-pham.php">
+                                                Thực đơn
+                                                <i class="icon-first-submenu fa fa-angle-down"></i>
+                                            </a>
+                                            <ul class="submenu">
+                                                <li>
+                                                    <a href="danh-sach-san-pham.php">Món chính</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-submenu">
+                                            <a href="danh-sach-tin-tuc.php">Tin tức <i class="icon-first-submenu fa fa-angle-down"></i></a>
+                                            <ul class="submenu">
+                                                <li>
+                                                    <a href="danh-sach-tin-tuc.php">Tin tức quảng cáo</a>
+                                                </li>
+                                                <li>
+                                                    <a href="danh-sach-tin-tuc.php">Ẩm thực thế giới</a>
+                                                </li>
+                                                <li>
+                                                    <a href="danh-sach-tin-tuc.php">Ẩm thực việt nam</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="lien-he.php">Liên hệ</a>
+                                        </li>
+                                    </ul>
+                                    <button class="btn-toggle navbar-toggle" id="btn-toggle">
+                                        <i class="icon-bar"></i>
+                                        <i class="icon-bar"></i>
+                                        <i class="icon-bar"></i>
+                                    </button>
+                                </nav>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="main">
+            <div class="banner">
+                <div class="img-banner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-xs-12 text-center">
+                                <div class="item-left">
+                                    <h3>iamCafe - <strong class="red">Giải pháp quản lý F&B 4.0 </strong></h3>
+                                    <p>QR Order - QR Payment</p>
+                                    <p>Gọi món không cần nhân viên, thanh toán không cần tiền mặt.</p>
+                                    <div class="row">
+                                        <div class="col-md-6 col-md-offset-3 col-xs-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Tên của bạn">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Số điện thoại">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Email nếu có">
+                                            </div>
+                                            <button class="btn btn-default">Yêu cầu tư vấn</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xs-12 text-center">
+                                <div class="item-right">
+                                    <h4>Trào lưu cafe QR của giới trẻ</h4>
+                                    <video width="" controls
+                                        poster="https://upload.wikimedia.org/wikipedia/commons/e/e8/Elephants_Dream_s5_both.jpg" >
+                                        <source
+                                        src="https://archive.org/download/ElephantsDream/ed_1024_512kb.mp4"
+                                        type="video/mp4">
+                                        <source
+                                        src="https://archive.org/download/ElephantsDream/ed_hd.ogv"
+                                        type="video/ogg">
+                                        <source
+                                        src="https://archive.org/download/ElephantsDream/ed_hd.avi"
+                                        type="video/avi">
+                                        Your browser doesn't support HTML5 video tag.
+                                    </video>
+                                    <!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                                    <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-procedure">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h2 class="text-center">Quản Lý Xuyên Suốt Hoặc Tách Biệt Từng Quy Trình</h2>
+                            <div class="img-procedure">
+                                <div class="logo-procedure">
+                                    <img src="resources/images/logo.png" alt="">
+                                </div>
+                                <div class="img-line">
+                                    <img src="resources/images/blog/line-bar.png" alt="">
+                                </div>
+                                <div class="img-line-down">
+                                    <img src="resources/images/blog/line-bar.png" alt="">
+                                </div>
+                                <ul class="list-procedure">
+                                    <li class="procedure-box">
+                                        <a href="#" class="img-procedure">
+                                            <img class="img-responsive" src="resources/images/blog/home.jpg" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="procedure-box">
+                                        <a href="#" class="img-procedure">
+                                            <img class="img-responsive" src="resources/images/blog/home1.jpg" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="procedure-box">
+                                        <a href="#" class="img-procedure">
+                                            <img class="img-responsive" width="65%" src="resources/images/blog/home2.jpg" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="procedure-box">
+                                        <a href="#" class="img-procedure">
+                                            <img class="img-responsive" src="resources/images/blog/home3.jpg" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-payment" id="blog-payment">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-xs-12">
+                            <a href="" class="pay-box-image">
+                                <img src="resources/images/blog/pay.jpg" class="img-responsive img-change" alt="">
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <div class="pay-group">
+                                <div class="row">
+                                    <div class="col-md-6 col-xs-12 col-sm-6">
+                                        <div class="pay-box boder-bottom-dash">
+                                            <span class="list-check"><img src="resources/images/blog/icon-list.png" alt=""></span>
+                                            <span class="pay-box-item" data-image="resources/images/blog/home.jpg">Quản lý Nhân viên</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-xs-12 col-sm-6">
+                                        <div class="pay-box boder-bottom-dash">
+                                            <span class="list-check"><img src="resources/images/blog/icon-list.png" alt=""></span>
+                                            <span class="pay-box-item" data-image="resources/images/blog/home.jpg">Thông báo đơn hàng phát sinh</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-xs-12 col-sm-6">
+                                        <div class="pay-box boder-bottom-dash">
+                                            <span class="list-check"><img src="resources/images/blog/icon-list.png" alt=""></span>
+                                            <span class="pay-box-item" data-image="resources/images/blog/home1.jpg">Quản lý bàn</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-xs-12 col-sm-6">
+                                        <div class="pay-box boder-bottom-dash">
+                                            <span class="list-check"><img src="resources/images/blog/icon-list.png" alt=""></span>
+                                            <span class="pay-box-item" data-image="resources/images/blog/home2.jpg">thanh toán QR code với momo</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-xs-12 col-sm-6">
+                                        <div class="pay-box boder-bottom-dash">
+                                            <span class="list-check"><img src="resources/images/blog/icon-list.png" alt=""></span>
+                                            <span class="pay-box-item" data-image="resources/images/blog/home3.jpg">Quản lý đơn hàng</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-xs-12 col-sm-6">
+                                        <div class="pay-box boder-bottom-dash">
+                                            <span class="list-check"><img src="resources/images/blog/icon-list.png" alt=""></span>
+                                            <span class="pay-box-item" data-image="resources/images/blog/home.jpg">báo cáo trực quan chính xác</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-xs-12 col-sm-6">
+                                        <div class="pay-box boder-bottom-dash">
+                                            <span class="list-check"><img src="resources/images/blog/icon-list.png" alt=""></span>
+                                            <span class="pay-box-item" data-image="resources/images/blog/banner.png">Quản lý nguyên vật liệu</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-xs-12 col-sm-6">
+                                        <div class="pay-box boder-bottom-dash">
+                                            <span class="list-check"><img src="resources/images/blog/icon-list.png" alt=""></span>
+                                            <span class="pay-box-item" data-image="resources/images/blog/banner.png">truy xuất dữ liệu mọi lúc, mọi nơi</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-xs-12 col-sm-6">
+                                        <div class="pay-box boder-bottom-dash">
+                                            <span class="list-check"><img src="resources/images/blog/icon-list.png" alt=""></span>
+                                            <span class="pay-box-item" data-image="resources/images/blog/banner.png">Quản lý Thực đơn</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-xs-12 col-sm-6">
+                                        <div class="pay-box boder-bottom-dash">
+                                            <span class="list-check"><img src="resources/images/blog/icon-list.png" alt=""></span>
+                                            <span class="pay-box-item" data-image="resources/images/blog/banner.png">tích hợp nhiều thiết bị hiện đại</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-post">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center mb-5">
+                            <h2 class="mb-3">Bạn muốn bán hàng nhanh chóng, chuyên nghiệp hơn</h2>
+                            <div class="lead">
+                                iamSale sẽ mang đến những thiết bị bán hàng hiện đại, thao tác sử dụng
+                                đơn giản, tiết kiệm tối đa chi phí.
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 mg-bottom-10">
+                            <div class="box-device box-shadow p-3 h-100">
+                                <img src="resources/images/post.png" alt="thiết bị t2 mini" class="img-responsive">
+                                <div class="content">
+                                    <h5 class=" font-weight-bold mb-2 mt-2">Máy bán hàng SalePos V1S</h5>
+                                    <p class="text-muted mb-2">Thiết bị nhỏ gọn, tích hợp sẵn máy in hóa đơn, phù hợp
+                                        cửa hàng bán lẻ, cafe, nhà hàng vừa và nhỏ...</p>
+                                    <p class="text-center py-2"><span class="h5 text-danger font-weight-bold">4,600,000</span><small
+                                            class="pl-2 d-inline-block"><del>4,900,000</del></small></p>
+                                    <p class="mt-3 text-center">
+                                        <a href="/v1s" class="btn btn-green mb-2 btn-sm d-inline-block">xem chi tiết</a>
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 mg-bottom-10">
+                            <div class="box-device box-shadow p-3 h-100">
+                                <img src="resources/images/post.png" alt="thiết bị t2 mini" class="img-responsive">
+                                <div class="content">
+                                    <h5 class=" font-weight-bold mb-2 mt-2">Máy bán hàng SalePos T2mini</h5>
+                                    <p class="text-muted mb-2">Màn hình cảm ứng 11.6 inch, góc nhìn rộng, mạnh mẽ phù
+                                        hợp nhiều mô hình kinh doanh</p>
+                                    <p class="text-center py-2"><span class="h5 text-danger font-weight-bold">8,500,000</span><small
+                                            class="pl-2 d-inline-block"><del>8,900,000</del></small></p>
+                                    <p class="mt-3 text-center">
+                                        <a href="/salepos-mini-t2" class="btn btn-green mb-2 btn-sm d-inline-block">xem
+                                            chi tiết</a>
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 mg-bottom-10">
+                            <div class="box-device box-shadow p-3 h-100">
+                                <img src="resources/images/post.png" alt="thiết bị t2 mini" class="img-responsive">
+                                <div class="content">
+                                    <h5 class=" font-weight-bold mb-2 mt-2">Máy bán hàng SalePos T2 Single</h5>
+                                    <p class="text-muted mb-2">Màn hình cảm ứng 15.6 inch,thao tác bán hàng dễ dàng hơn</p>
+                                    <p class="text-center py-2"><span class="h5 text-danger font-weight-bold">10,500,000</span><small
+                                            class="pl-2 d-inline-block"><del>11,000,000</del></small></p>
+                                    <p class="mt-3 text-center">
+                                        <a href="/t2-single" class="btn btn-green mb-2 btn-sm d-inline-block">xem chi
+                                            tiết</a>
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 mg-bottom-10">
+                            <div class="box-device box-shadow p-3 h-100">
+                                <img src="resources/images/post.png" alt="thiết bị t2 mini" class="img-responsive">
+                                <div class="content">
+                                    <h5 class=" font-weight-bold mb-2 mt-2">Máy bán hàng SalePos T2 Dual Screen</h5>
+                                    <p class="text-muted mb-2">Màn hình cảm ứng 15.6 inch, và màn hình phụ 10.1 inch</p>
+                                    <p class="text-center py-2"><span class="h5 text-danger font-weight-bold">14,300,000</span><small
+                                            class="pl-2 d-inline-block"><del>14,900,000</del></small></p>
+                                    <p class="mt-3 text-center">
+                                        <a href="/may-ban-hang-salepos-t2-dual-screen" class="btn btn-green mb-2 btn-sm d-inline-block">xem
+                                            chi tiết</a>
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="list-partner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center mb-5">
+                            <h2 class="mb-3">Khách hàng của chúng tôi</h2>
+                            <div class="lead">
+                                Khách hàng đã dùng sản phẩm của chúng tôi nói những gì?
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="partner-left">
+                                <div class="blog-partner">
+                                    <div class="item">
+                                        <div class="img-parner">
+                                            <img src="resources/images/blog/home.jpg" alt="">
+                                        </div>
+                                        <h4>huỳnh đức hiếu</h4>
+                                        <span>Founder & C.E.O chuỗi Bonjour Restro</span>
+                                        <p> 
+                                                Tối đã quyết định dùng iamCafe.vn vì hệ thống quản lý chặt chẽ, chính xác
+                                                và đơn giản hơn cho nhân viên sử dụng.
+                                                Tôi rất hài lòng về sản phẩm và dịch vụ của iamCafe.vn
+                                            
+                                        </p>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img-parner">
+                                            <img src="resources/images/blog/home1.jpg" alt="">
+                                        </div>
+                                        <h4>huỳnh đức hiếu</h4>
+                                        <span>Founder & C.E.O chuỗi Bonjour Restro</span>
+                                        <p>
+                                            Tối đã quyết định dùng iamCafe.vn vì hệ thống quản lý chặt chẽ, chính xác
+                                            và đơn giản hơn cho nhân viên sử dụng.
+                                            Tôi rất hài lòng về sản phẩm và dịch vụ của iamCafe.vn
+                                        </p>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img-parner">
+                                            <img src="resources/images/blog/home2.jpg" alt="">
+                                        </div>
+                                        <h4>huỳnh đức hiếu</h4>
+                                        <span>Founder & C.E.O chuỗi Bonjour Restro</span>
+                                        <p>
+                                            Tối đã quyết định dùng iamCafe.vn vì hệ thống quản lý chặt chẽ, chính xác
+                                            và đơn giản hơn cho nhân viên sử dụng.
+                                            Tôi rất hài lòng về sản phẩm và dịch vụ của iamCafe.vn
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="">
+                                <img src="resources/images/blog/list.png" class="img-responsive" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-news">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center mb-5">
+                            <h2 class="mb-3">trang thông tin</h2>
+                        </div>
+                        <div class="col-xs-12 text-center pd-20">
+                            <div class="tab-button">
+                                <button class="btn btn-default" href="#home" :class="tab == 1 ? 'active' :''" @click="tab = 1"
+                                    aria-controls="home" role="tab" data-toggle="tab">
+                                    Kinh nghiệm bán hàng
+                                </button>
+                                <button class="btn btn-default" :class="tab == 2 ? 'active' :''" @click="tab = 2"
+                                    href="#profile" aria-controls="profile" role="tab" data-toggle="tab">
+                                    Câu chuyện khởi nghiệp F&B
+                                </button>
+                                <button class="btn btn-default" :class="tab == 3 ? 'active' :''" @click="tab = 3"
+                                    href="#messages" aria-controls="messages" role="tab" data-toggle="tab">
+                                    Marketing 4.0
+                                </button>
+                                <button class="btn btn-default" :class="tab == 4 ? 'active' :''" @click="tab = 4"
+                                    href="#settings" aria-controls="settings" role="tab" data-toggle="tab">
+                                    QR Order
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="home">
+                                    <div class="row">
+                                        <div class="col-md-3 col-sm-6 col-xs-12 mg-bottom-10" v-for="item in 4">
+                                            <div class="article-item">
+                                                <a href="" class="art-img" tabindex="0">
+                                                    <img src="resources/images/post.png" alt="" class="img-responsive">
+                                                </a>
+                                                <div class="art-info">
+                                                    <a href="lam-the-nao-de-tranh-mat-khach-hang-vi-cho-doi-qua-lau"
+                                                        class="art-name title-page" tabindex="0">
+                                                        Làm thế nào để tránh
+                                                        tình trạng mất khách hàng vì chờ đợi quá lâu
+                                                    </a>
+                                                    <p class="description">Ngày nay, thị trường kinh doanh chính là
+                                                        chiến trường khốc liệt, đầy cạnh tranh nhất, do đó điều mà các
+                                                        chủ cửa hàng quan tâm hàng đầu hiện nay là làm thế nào để tránh
+                                                        tình trạng mất khách hàng vì chờ đợi quá lâu. Và iamSale chính
+                                                        là giải pháp tối ưu giúp bạn giải quyết triệt để nỗi lo trên để
+                                                        có thể yên tâm bán hàng.
+                                                    </p>
+                                                    <ul class="art-post">
+                                                        <li>
+                                                            <p><i class="fa fa-clock-o"></i> 17/10/2018</p>
+                                                        </li>
+                                                        <li>
+                                                            <p><i class="fa fa-eye"></i> 100</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="profile">
+                                    <div class="row">
+                                        <div class="col-md-3 col-sm-6 col-xs-12 mg-bottom-10" v-for="item in 2">
+                                            <div class="article-item">
+                                                <a href="" class="art-img" tabindex="0">
+                                                    <img src="resources/images/post.png" alt="" class="img-responsive">
+                                                </a>
+                                                <div class="art-info">
+                                                    <a href="lam-the-nao-de-tranh-mat-khach-hang-vi-cho-doi-qua-lau"
+                                                        class="art-name title-page" tabindex="0">
+                                                        Làm thế nào để tránh
+                                                        tình trạng mất khách hàng vì chờ đợi quá lâu
+                                                    </a>
+                                                    <p class="description">Ngày nay, thị trường kinh doanh chính là
+                                                        chiến trường khốc liệt, đầy cạnh tranh nhất, do đó điều mà các
+                                                        chủ cửa hàng quan tâm hàng đầu hiện nay là làm thế nào để tránh
+                                                        tình trạng mất khách hàng vì chờ đợi quá lâu. Và iamSale chính
+                                                        là giải pháp tối ưu giúp bạn giải quyết triệt để nỗi lo trên để
+                                                        có thể yên tâm bán hàng.
+                                                    </p>
+                                                    <ul class="art-post">
+                                                        <li>
+                                                            <p><i class="fa fa-clock-o"></i> 17/10/2018</p>
+                                                        </li>
+                                                        <li>
+                                                            <p><i class="fa fa-eye"></i> 100</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="messages">
+                                    <div class="row">
+                                        <div class="col-md-3 col-sm-6 col-xs-12 mg-bottom-10" v-for="item in 2">
+                                            <div class="article-item">
+                                                <a href="" class="art-img" tabindex="0">
+                                                    <img src="resources/images/post.png" alt="" class="img-responsive">
+                                                </a>
+                                                <div class="art-info">
+                                                    <a href="lam-the-nao-de-tranh-mat-khach-hang-vi-cho-doi-qua-lau"
+                                                        class="art-name title-page" tabindex="0">
+                                                        Làm thế nào để tránh
+                                                        tình trạng mất khách hàng vì chờ đợi quá lâu
+                                                    </a>
+                                                    <p class="description">Ngày nay, thị trường kinh doanh chính là
+                                                        chiến trường khốc liệt, đầy cạnh tranh nhất, do đó điều mà các
+                                                        chủ cửa hàng quan tâm hàng đầu hiện nay là làm thế nào để tránh
+                                                        tình trạng mất khách hàng vì chờ đợi quá lâu. Và iamSale chính
+                                                        là giải pháp tối ưu giúp bạn giải quyết triệt để nỗi lo trên để
+                                                        có thể yên tâm bán hàng.
+                                                    </p>
+                                                    <ul class="art-post">
+                                                        <li>
+                                                            <p><i class="fa fa-clock-o"></i> 17/10/2018</p>
+                                                        </li>
+                                                        <li>
+                                                            <p><i class="fa fa-eye"></i> 100</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="settings">
+                                    <div class="row">
+                                        <div class="col-md-3 col-sm-6 col-xs-12 mg-bottom-10" v-for="item in 1">
+                                            <div class="article-item">
+                                                <a href="" class="art-img" tabindex="0">
+                                                    <img src="resources/images/post.png" alt="" class="img-responsive">
+                                                </a>
+                                                <div class="art-info">
+                                                    <a href="lam-the-nao-de-tranh-mat-khach-hang-vi-cho-doi-qua-lau"
+                                                        class="art-name title-page" tabindex="0">
+                                                        Làm thế nào để tránh
+                                                        tình trạng mất khách hàng vì chờ đợi quá lâu
+                                                    </a>
+                                                    <p class="description">Ngày nay, thị trường kinh doanh chính là
+                                                        chiến trường khốc liệt, đầy cạnh tranh nhất, do đó điều mà các
+                                                        chủ cửa hàng quan tâm hàng đầu hiện nay là làm thế nào để tránh
+                                                        tình trạng mất khách hàng vì chờ đợi quá lâu. Và iamSale chính
+                                                        là giải pháp tối ưu giúp bạn giải quyết triệt để nỗi lo trên để
+                                                        có thể yên tâm bán hàng.
+                                                    </p>
+                                                    <ul class="art-post">
+                                                        <li>
+                                                            <p><i class="fa fa-clock-o"></i> 17/10/2018</p>
+                                                        </li>
+                                                        <li>
+                                                            <p><i class="fa fa-eye"></i> 100</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="section-item footer">
+            <div class="form-sub">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 text-center">
+                            <h2>yêu cầu tư vấn</h2>
+                        </div>
+                        <div class="col-sm-4 col-sm-offset-4 text-center">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Tên của bạn">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Số điện thoại">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Email">
+                            </div>
+                            <button class="btn btn-default">GỬI NGAY</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row hotline-info">
+                    <div class="col-12 col-sm-6 col-md-4 mb-3 text-center text-sm-left">Hỗ trợ nhanh:
+                        <a href="tel:09091919191" title="Hỗ trợ nhanh">0918 076 446</a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 mb-3 text-center text-sm-left">Tổng đài:
+                        <i class="fas fa-phone-o"></i>
+                        <a href="tel:1900 969 642" title="Tổng đài">1900 969 642</a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 mb-3 text-center text-sm-left">Email:
+                        <a href="mailto:hello@iamSale.vn" title="Email">hello@iamSale.vn</a>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-xs-6 col-md-2 col-sm-3">
+                        <h6 class="h6 mb-1 font-weight-bold mb-2">Thông tin chung</h6>
+                        <ul class="menu-footer row">
+                            <li class="col-12">
+                                <a href="dieu-khoan-su-dung">Điều khoản sử dụng</a>
+                            </li>
+                            <li class="col-12">
+                                <a href="chinh-sach-bao-mat">Chính sách bảo mật</a>
+                            </li>
+                            <li class="col-12">
+                                <a href="contact">Liên hệ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-md-2 col-sm-3">
+                        <h6 class="h6 mb-1 font-weight-bold mb-2">Hỗ trợ</h6>
+                        <ul class="menu-footer row">
+                            <li class="col-12">
+                                <a href="/help">Học viện iamSale</a>
+                            </li>
+                            <li class="col-12">
+                                <a href="/thay-doi-thong-tin-cua-hang">Câu hỏi thường gặp</a>
+                            </li>
+                            <li class="col-12">
+                                <a href="/themes">Kho giao diện</a>
+                            </li>
+                            <li class="col-12">
+                                <a href="/device">Thiết bị hỗ trợ</a>
+                            </li>
+                            <li class="col-12">
+                                <a href="hinh-thuc-thanh-toan">Hình thức thanh toán</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-md-2 col-sm-3">
+                        <h6 class="h6 mb-1 font-weight-bold mb-2">Góc chia sẻ</h6>
+                        <ul class="menu-footer row">
+                            <li class="col-12">
+                                <a href="kinh-nghiem-ban-hang">Kinh nghiệm bán hàng</a>
+                            </li>
+                            <li class="col-12">
+                                <a href="/cau-chuyen-thanh-cong">Câu chuyện thành công</a>
+                            </li>
+                            <li class="col-12">
+                                <a href="giai-phap-marketing">Giải pháp marketing</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-md-2 col-sm-3">
+                        <h6 class="h6 mb-1 font-weight-bold mb-2">Hợp tác</h6>
+                        <ul class="menu-footer row">
+                            <li class="col-12">
+                                <a href="gioi-thieu-khach-hang">Giới thiệu khách hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-md-2 col-sm-3">
+                        <h6 class="h6 mb-1 font-weight-bold mb-2">Học viện iamSale</h6>
+                        <ul class="menu-footer row">
+                            <li class="col-12">
+                                <a href="kho-giao-dien-5b6176b318f3010a6515fde2">Kho giao diện</a>
+                            </li>
+                            <li class="col-12">
+                                <a href="kho-giao-dien-5b6176b318f3010a6515fde2">Kho giao diện</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="subscribe" class="col-xs-6 col-md-2">
+                        <h6 class="h6 mb-1 font-weight-bold">Kết nối với chúng tôi</h6>
+                        <div class="row">
+                            <div class="col">
+                                <div class="social-icons">
+                                    <a target="_blank" href="#" class="btn-facebook"><i class="fa fa-facebook"></i></a>
+                                    <a target="_blank" href="#" class="btn-youtube"><i class="fa fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 text-center title-footer">
+                        <h4>Thông tin công ty</h4>
+                        <p>Đơn vị chủ quản: Công ty TNHH Thương mại và Dịch vụ Polaris Việt Nam</p>
+                        <p>Trụ sở: Tầng 12A - Tòa nhà Pico Plaza, 20 Cộng Hòa, Phường 12, Quận Tân Bình, TP Hồ Chí Minh</p>
+                        <p>Email: hello@iamCafe.vn</p>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright text-center">
+                <p>© 2018 Copyright by
+                    <a href="/" title="Trang chủ iamSale.vn">iamSale.vn </a>
+                </p>
+            </div>
+        </footer>
+        <button  onclick="addnew" class="btn btn-warning">ấn vào đây!</button>
+    </section>
+
+    <script src="resources/vendor/jquery/jquery.js"></script>
+    <script src="resources/vendor/jquery-ui/jquery-ui.min.js"></script>
+    <script src="resources/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="resources/vendor/wave-effect/wave-affect.js"></script>
+    <script src="resources/vendor/vue/vue.js"></script>
+    <script src="resources/vendor/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="resources/vendor/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script src="resources/vendor/fancybox/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="resources/vendor/jssocials/jssocials.min.js"></script>
+    <script src="resources/js/main.js"></script>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                tab: 1,
+            },
+        })
+    </script>
+</body>
+
+</html>
